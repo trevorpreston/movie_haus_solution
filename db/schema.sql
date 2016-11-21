@@ -1,0 +1,8 @@
+DROP TABLE IF EXISTS movies;
+
+CREATE TABLE movies (
+  movie_id SERIAL PRIMARY KEY NOT NULL,
+  title VARCHAR(128) NOT NULL,
+  poster VARCHAR(256),
+  created_at TIMESTAMP NOT NULL DEFAULT now()
+);
